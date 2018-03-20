@@ -2,8 +2,15 @@
 <html>
 <head>
 	<title>VK app</title>
+	<script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
 </head>
 <body>
-
+	<script type="text/javascript"> 
+	  VK.init(function() { 
+	     alert('Success');
+	  }, function() { 
+	     alert('Failure');
+	}, '5.73'); 
+	</script>
 </body>
 </html>
