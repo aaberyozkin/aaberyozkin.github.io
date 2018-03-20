@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	$('body').height($('body').height());
+
+
 	Calendar("calendar",
 		new Date().getFullYear(), 
 		new Date().getMonth());
@@ -47,5 +50,4 @@ function Calendar(id, year, month) {
 	if (document.querySelectorAll('#'+id+' tbody tr').length < 6) // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
 	    document.querySelector('#'+id+' tbody').innerHTML += '<tr><td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;<td>&nbsp;';
 }
-Calendar2();
 
