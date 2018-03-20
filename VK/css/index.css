@@ -16,8 +16,7 @@ body
   	color: rgb(85, 85, 85);
 }
 #calendar tbody td {
-	width: 140px;
-	height: 140px;
+	min-height: 40px;
   	color: rgb(44, 86, 122);
 }
 #calendar tbody td:nth-child(n+6), #calendar .holiday {
