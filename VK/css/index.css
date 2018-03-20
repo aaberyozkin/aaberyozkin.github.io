@@ -11,9 +11,7 @@ body
 	  font-size: 15px;
 	  text-align: center;
 	  cursor: default;
-}
-#calendar tbody td, #calendar tbody th {
-	  border: 2px solid #ddd;
+	  background-color: #ddd;
 }
 
 #calendar thead tr:last-child {
