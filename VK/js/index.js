@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	
-	console.log($('body').width());
+
+	alert($('body').width());
 
 
 	Calendar("calendar",
