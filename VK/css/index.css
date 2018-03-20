@@ -11,6 +11,8 @@ body
 	  font-size: 15px;
 	  text-align: center;
 	  cursor: default;
+	  border-color: #ddd;
+	  border: 2;
 }
 #calendar thead tr:last-child {
   	font-size: small;
