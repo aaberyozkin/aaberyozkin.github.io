@@ -3,3 +3,24 @@ body
 	max-width: 1000px;
 	max-height: 4500px;
 }
+
+#calendar {
+  width: 100%;
+  font: monospace;
+  line-height: 1.2em;
+  font-size: 15px;
+  text-align: center;
+}
+#calendar thead tr:last-child {
+  font-size: small;
+  color: rgb(85, 85, 85);
+}
+#calendar tbody td {
+  color: rgb(44, 86, 122);
+}
+#calendar tbody td:nth-child(n+6), #calendar .holiday {
+  color: rgb(231, 140, 92);
+}
+#calendar tbody td.today {
+  outline: 3px solid red;
+}
