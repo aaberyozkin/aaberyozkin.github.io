@@ -2,15 +2,14 @@
 <html>
 <head>
 	<title>VK app</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
 </head>
 <body>
 	<script type="text/javascript"> 
-	  VK.init(function() { 
-	     alert('Success');
-	  }, function() { 
-	     alert('Failure');
-	}, '5.73'); 
+	  VK.api("wall.post", {"message": "Hello!"}, function (data) {
+		alert("Post ID:" + data.response.post_id);
+	}); 
 	</script>
 </body>
 </html>
