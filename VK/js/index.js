@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-	alert($('body').width());
+	var w = $('body').width();
+	$('body').height(w);
 
 
 	Calendar("calendar",
