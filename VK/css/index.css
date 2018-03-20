@@ -10,6 +10,7 @@ body
   line-height: 1.2em;
   font-size: 15px;
   text-align: center;
+  cursor: default;
 }
 #calendar thead tr:last-child {
   font-size: small;
@@ -22,5 +23,5 @@ body
   color: rgb(231, 140, 92);
 }
 #calendar tbody td.today {
-  outline: 3px solid red;
+	background-color: #ddd;
 }
