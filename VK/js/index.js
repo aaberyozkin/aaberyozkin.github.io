@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$(document).load(function(){
-		$('body').height($('body').width());
+		console.log($('body').width());
 	})
 
 
