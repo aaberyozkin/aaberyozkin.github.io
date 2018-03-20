@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('body').height($('body').height());
+	$('body').height($('body').width());
 
 
 	Calendar("calendar",
