@@ -6,7 +6,6 @@ body
 
 #calendar {
 	  width: 100%;
-	  font: monospace;
 	  line-height: 1.2em;
 	  font-size: 15px;
 	  text-align: center;
@@ -17,7 +16,8 @@ body
   	color: rgb(85, 85, 85);
 }
 #calendar tbody td {
-	min-height: 40px;
+	width: 140px;
+	height: 140px;
   	color: rgb(44, 86, 122);
 }
 #calendar tbody td:nth-child(n+6), #calendar .holiday {
