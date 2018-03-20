@@ -5,8 +5,8 @@ $(document).ready(function(){
 
 	$('#calendar').change(function(){
 		Calendar("calendar",
-			document.querySelector('#calendar3 input').value,
-			parseFloat(document.querySelector('#calendar3 select').options[document.querySelector('#calendar3 select').selectedIndex].value));
+			document.querySelector('#calendar input').value,
+			parseFloat(document.querySelector('#calendar select').options[document.querySelector('#calendar select').selectedIndex].value));
 	});
 })
 
