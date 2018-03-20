@@ -3,7 +3,7 @@ $(document).ready(function(){
 		new Date().getFullYear(), 
 		new Date().getMonth());
 
-	$('#calendar3').onChange(function(){
+	$('#calendar3').change(function(){
 		Calendar("calendar",
 			document.querySelector('#calendar3 input').value,
 			parseFloat(document.querySelector('#calendar3 select').options[document.querySelector('#calendar3 select').selectedIndex].value));
