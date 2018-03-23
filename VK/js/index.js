@@ -38,7 +38,7 @@ function CalendarGenerator(id, year, month) {
 
 	calendar += "<tr class='day'><td>"+D.getDay()+" "+month[D.getMonth()]+" ("+week[D.getDay()]+")</td></tr>";
 
-	$("#"+id+" tbody").innerHTML(calendar);
+	$("#"+id+" tbody").html(calendar);
 }
 
 
