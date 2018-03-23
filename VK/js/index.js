@@ -7,7 +7,7 @@ $(document).ready(function(){
 		new Date().getFullYear(), 
 		new Date().getMonth());
 
-	Calendar("calendar",
+	/*Calendar("calendar",
 		new Date().getFullYear(), 
 		new Date().getMonth());
 
@@ -22,7 +22,7 @@ $(document).ready(function(){
 	  	Calendar("calendar", 
 	  		document.querySelector('#calendar thead td:nth-child(2)').dataset.year, 
 	  		parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month)+1);
-	});
+	});*/
 })
 
 function CalendarGenerator(id, year, month) {
