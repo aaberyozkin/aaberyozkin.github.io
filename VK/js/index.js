@@ -31,13 +31,14 @@ function CalendarGenerator(id, year, month) {
 	    DD = new Date(year,month,Dlast),
 	    DNlast = new Date(D.getFullYear(),D.getMonth(),Dlast).getDay(),
 	    DNfirst = new Date(D.getFullYear(),D.getMonth(),1).getDay(),
-		week = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
+	    day = 0,
+	    month=["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря"],
+		week = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"],
+		calendar = "";
 
-	console.log("D: "+D);
-	console.log("Dlast: "+Dlast);
-	console.log("DD: "+DD);
-	console.log("DNlast: "+DNlast);
-	console.log("DNfirst: "+DNfirst);
+	calendar += "<tr class='day'><td>"+D.getDay()+" "+month[D.getMonth()]+" ("+week[D.getDay()]+")</td></tr>";
+
+	$("#"+id+" tbody").innerHTML(calendar);
 }
 
 
