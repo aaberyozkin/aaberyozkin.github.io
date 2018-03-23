@@ -3,6 +3,7 @@ $(document).ready(function(){
 	var w = $('body').width();
 	$('body').height(w);
 
+	CalendarGenerator();
 
 	Calendar("calendar",
 		new Date().getFullYear(), 
@@ -22,8 +23,29 @@ $(document).ready(function(){
 	});
 })
 
+function CalendarGenerator() {
+	var D = new Date(),
+		Dlast = new Date(year,month+1,0).getDate(),
+	    DD = new Date(year,month,Dlast),
+	    DNlast = new Date(D.getFullYear(),D.getMonth(),Dlast).getDay(),
+	    DNfirst = new Date(D.getFullYear(),D.getMonth(),1).getDay(),
+		week = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
+
+	console.log("D: "+D);
+	console.log("Dlast: "+Dlast);
+	console.log("DD: "+DD);
+	console.log("DNlast: "+DNlast);
+	console.log("DNfirst: "+DNfirst);
+}
+
 
 function Calendar(id, year, month) {
+
+
+
+
+
+
 	var Dlast = new Date(year,month+1,0).getDate(),
 	    D = new Date(year,month,Dlast),
 	    DNlast = new Date(D.getFullYear(),D.getMonth(),Dlast).getDay(),
