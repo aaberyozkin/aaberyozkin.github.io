@@ -3,7 +3,9 @@ $(document).ready(function(){
 	var w = $('body').width();
 	$('body').height(w);
 
-	CalendarGenerator();
+	CalendarGenerator("calendar",
+		new Date().getFullYear(), 
+		new Date().getMonth());
 
 	Calendar("calendar",
 		new Date().getFullYear(), 
@@ -23,7 +25,7 @@ $(document).ready(function(){
 	});
 })
 
-function CalendarGenerator() {
+function CalendarGenerator(id, year, month) {
 	var D = new Date(),
 		Dlast = new Date(year,month+1,0).getDate(),
 	    DD = new Date(year,month,Dlast),
